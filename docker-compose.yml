@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: SoftplanDesafioFullstack
+    image: postgre
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: admin
+      POSTGRES_BD: softplanFullstack
