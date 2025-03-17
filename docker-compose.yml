@@ -1,7 +1,7 @@
 services:
   postgres:
     container_name: SoftplanDesafioFullstack
-    image: postgre
+    image: postgres
     ports:
       - "5432:5432"
     environment:
