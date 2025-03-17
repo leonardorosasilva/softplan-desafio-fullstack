@@ -32,7 +32,7 @@ public class AuthenticationController {
 
     @PostMapping("login/")
     public ResponseEntity<Object> login(@RequestBody AuthenticatorDTO authenticatorDTO) {
-        UserEntity userEntity = this.userRepositories.findByLogin(authenticatorDTO.email()).orElseThrow();
+        UserEntity userEntity = this.userRepositories.findByEmail(authenticatorDTO.email()).orElseThrow();
         if(!passwordEncoder.matches(authenticatorDTO.password(), userEntity.getPassword())) {
             return ResponseEntity.status(401).build();
         } else {
@@ -46,7 +46,7 @@ public class AuthenticationController {
 
     @PostMapping("register/")
     public ResponseEntity<Object> register(@RequestBody @Valid RegisterDTO registerDTO) {
-        if(this.userRepositories.findByLogin(registerDTO.email()).isPresent()) {
+        if(this.userRepositories.findByEmail(registerDTO.email()).isPresent()) {
             return ResponseEntity.badRequest().body("User already exists");
         } else {
             String encodedPassword = new BCryptPasswordEncoder().encode(registerDTO.password());
