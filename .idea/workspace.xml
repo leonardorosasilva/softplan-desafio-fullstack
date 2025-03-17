@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec49613-19ff-4f73-85ce-11382f905059" name="Changes" comment="Migration: Criação de Users" />
+    <list default="true" id="3ec49613-19ff-4f73-85ce-11382f905059" name="Changes" comment="Migration: Criação de Users">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/controllers/user/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/controllers/user/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/models/user/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/models/user/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/repositories/user/UserRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/repositories/user/UserRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/CustomUserDetailsServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/CustomUserDetailsServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/softplandesafiofullstack/services/user/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_createUsersTable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +45,9 @@
     &quot;accountId&quot;: &quot;d878c7ee-2edd-41ec-aaae-25d867939744&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/3.4.3/spring-boot-autoconfigure-3.4.3.jar!/org/springframework/boot/autoconfigure/jdbc/XADataSourceAutoConfiguration.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -46,35 +62,55 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2uC3njqj6W7TU7g8BTygobsqpVp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.SoftplanDesafioFullstackApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/leonardo/IdeaProjects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SoftplanDesafioFullstackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/leonardo/IdeaProjects/softplan-desafio-fullstack&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration name="SoftplanDesafioFullstackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="softplan-desafio-fullstack" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.softplandesafiofullstack.SoftplanDesafioFullstackApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,6 +140,11 @@
       <workItem from="1741972114395" duration="1364000" />
       <workItem from="1742016613541" duration="409000" />
       <workItem from="1742017059783" duration="136000" />
+      <workItem from="1742050037758" duration="7076000" />
+      <workItem from="1742099752221" duration="249000" />
+      <workItem from="1742146901931" duration="610000" />
+      <workItem from="1742228359465" duration="2404000" />
+      <workItem from="1742231041123" duration="3086000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencias utilizadas">
       <option name="closed" value="true" />

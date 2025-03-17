@@ -1,6 +1,7 @@
 package br.com.softplandesafiofullstack.models.user;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -14,8 +15,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
-@Entity
-@Table(name = "users")
+@Entity(name = "users")
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -27,7 +27,8 @@ public class UserEntity implements UserDetails {
     private UUID id;
 
     @Column(unique = true)
-    private String login;
+    @Email
+    private String email;
 
     @NotBlank
     private String password;
@@ -36,8 +37,8 @@ public class UserEntity implements UserDetails {
     @Enumerated(EnumType.STRING)
     private UserRoles role;
 
-    public UserEntity(String login, String password, UserRoles role) {
-        this.login = login;
+    public UserEntity(String email, String password, UserRoles role) {
+        this.email = email;
         this.password = password;
         this.role = role;
     }
@@ -52,7 +53,7 @@ public class UserEntity implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.login;
+        return this.email;
     }
 
     @Override
