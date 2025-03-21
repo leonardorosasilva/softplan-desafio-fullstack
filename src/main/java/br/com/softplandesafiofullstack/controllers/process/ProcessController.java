@@ -24,10 +24,7 @@ public class ProcessController {
 
     @PostMapping
     public ResponseEntity<Object> create(@RequestBody @Valid ProcessEntity processEntity) {
-        System.out.println("Iniciando processo " + processEntity.getTitle());
         ResponseEntity<Object> response = this.processService.createProcess(processEntity);
-        System.out.println("Finalizando processo " + processEntity.getTitle());
-
         return response;
     }
 }

@@ -7,12 +7,10 @@ import lombok.*;
 
 import java.util.UUID;
 
+@Entity(name = "process")
+@EqualsAndHashCode(of = "id")
 @Getter
 @Setter
-@Entity(name = "process")
-@AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode(of = "id")
 public class ProcessEntity {
 
     @Id
